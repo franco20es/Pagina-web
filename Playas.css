@@ -1,0 +1,1118 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background-color: #F5F7FA;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #1E90FF;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
+/* Header Styles */
+.header-playas {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&auto=format&fit=crop&q=80') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+}
+
+.header-playas::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background: #FFFFFF;
+  margin: 2px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin-left: 2rem;
+}
+
+.navbar a {
+  color: #FFFFFF;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover, .navbar a[aria-current="page"] {
+  color: #FF6F61;
+}
+
+.btn-suscribete {
+  background: #FF6F61;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.header-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.btn-explorar {
+  background: #1E90FF;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-explorar:hover {
+  background: #FF6F61;
+}
+
+/* Destinos Section */
+.destinos-section {
+  padding: 4rem 2rem;
+  background: #FFFFFF;
+}
+
+.slider-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+}
+
+.slide {
+  min-width: 350px; /* o el ancho que prefieras para cada card */
+  flex: 0 0 auto;
+
+}
+
+.slide img {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.texto {
+  padding: 2rem;
+  width: 50%;
+  background: #F5E8C7;
+  border-radius: 10px;
+  margin-left: -20px;
+  z-index: 1;
+}
+
+.texto h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.texto p {
+  margin-bottom: 1.5rem;
+}
+
+.btn-paquete {
+  background: #FF6F61;
+  color: #FFFFFF;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+}
+
+.btn-paquete:hover {
+  background: #1E90FF;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.slider-prev, .slider-next {
+  background: #1E90FF;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slider-prev:hover, .slider-next:hover {
+  background: #FF6F61;
+}
+
+/* Hospedaje Section */
+.hospedaje-section {
+  padding: 4rem 2rem;
+  background: #F5F7FA;
+}
+
+.hospedaje-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.hospedaje-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hospedaje-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hospedaje-card:hover {
+  transform: translateY(-10px);
+}
+
+.hospedaje-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.price {
+  font-weight: bold;
+  color: #FF6F61;
+  margin: 1rem 0;
+}
+
+.btn-reservar {
+  background: #1E90FF;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-reservar:hover {
+  background: #FF6F61;
+}
+
+/* Gastronomía Section */
+.gastronomia-section {
+  padding: 4rem 2rem;
+  background: #FFFFFF;
+}
+
+.gastronomia-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.comida-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.comida-card {
+  background: #F5E8C7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comida-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-comprar {
+  background: #FF6F61;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-comprar:hover {
+  background: #1E90FF;
+}
+
+/* Transporte Section */
+.transporte-section {
+  padding: 4rem 2rem;
+  background: #F5F7FA;
+}
+
+.transporte-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.transporte-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.transporte-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Section */
+.info-section {
+  padding: 4rem 2rem;
+  background: #FFFFFF;
+}
+
+.info-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.info-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info-content p {
+  margin-bottom: 1.5rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 2rem;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Testimonios Section */
+.testimonios-section {
+  padding: 4rem 2rem;
+  background: #F5E8C7;
+}
+
+.testimonios-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonio {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonio img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonio-content p {
+  font-style: italic;
+}
+
+.testimonio-content footer {
+  font-weight: bold;
+  color: #1E90FF;
+  margin-top: 0.5rem;
+}
+
+.btn-toggle {
+  display: block;
+  margin: 2rem auto;
+  background: #1E90FF;
+  color: #FFFFFF;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-toggle:hover {
+  background: #FF6F61;
+}
+
+.agregar-comentario {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-hidden {
+  display: none;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.rating-stars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star:hover, .star.active {
+  color: #FF6F61;
+}
+
+.btn-agregar {
+  background: #FF6F61;
+  color: #FFFFFF;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-agregar:hover {
+  background: #1E90FF;
+}
+
+/* Datos Section */
+.datos-section {
+  padding: 4rem 2rem;
+  background: #FFFFFF;
+}
+
+.datos-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.datos-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.lugares-lista, .tabla-datos {
+  flex: 1;
+  min-width: 300px;
+}
+
+.lugares-lista ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background: #1E90FF;
+  color: #FFFFFF;
+}
+
+/* Mapa Section */
+.mapa-section {
+  padding: 4rem 2rem;
+  background: #F5F7FA;
+}
+
+.mapa-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.mapa-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mapa-container iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+/* Footer Styles */
+.footer {
+  background: #1E90FF;
+  color: #FFFFFF;
+  padding: 4rem 2rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-contacto address {
+  font-style: normal;
+}
+
+.footer-contacto p {
+  margin-bottom: 1rem;
+}
+
+.footer-redes .redes-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.redes-list a {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+.redes-list a:hover {
+  color: #FF6F61;
+}
+
+.footer-newsletter form {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-newsletter input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.footer-newsletter button {
+  background: #FF6F61;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+  background: #FFFFFF;
+  color: #1E90FF;
+}
+
+.footer-legal {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+}
+
+.legal-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.legal-links a {
+  color: #FFFFFF;
+}
+
+.legal-links a:hover {
+  color: #FF6F61;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-content p {
+    font-size: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #1E90FF;
+    padding: 1rem;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 0.5rem 0;
+  }
+
+  .slide {
+    flex-direction: column;
+  }
+
+  .slide img, .texto {
+    width: 100%;
+    margin: 0;
+  }
+
+  .slide img {
+    height: 300px;
+  }
+
+  .datos-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .btn-explorar, .btn-paquete, .btn-reservar, .btn-comprar, .btn-agregar {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hospedaje-card img, .comida-card img {
+    height: 150px;
+  }
+}
+
+/* Accessibility */
+:focus {
+  outline: 2px solid #FF6F61;
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+
+
+
+/* Ventana flotante (modal) para comentarios */
+.modal-comentario {
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.4);
+  display: flex; align-items: center; justify-content: center;
+}
+.modal-contenido {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+}
+.cerrar-modal {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 2rem;
+  color: #e74c3c;
+  cursor: pointer;
+}
+/* Puedes poner esto en tu archivo Playas.cssAsegura que los comentarios nuevos usen el mismo grid*/
+#nuevos-comentarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Opcional: iguala el estilo de los testimonios */
+#nuevos-comentarios .testimonio {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#nuevos-comentarios .testimonio img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+/* Para que el header de cultura tenga el mismo estilo que el de playas */
+.header-cultura {
+  background: url('https://cdn.pixabay.com/photo/2025/05/24/23/16/fallow-9620489_640.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+}
+.header-cultura::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* Para que el header de desierto tenga el mismo estilo que el de playas */
+.header-montañas {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1920&auto=format&fit=crop&q=80') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+}
+.header-montañas::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+/*style para boton de agregar paquete*/
+/* Formulario de agregar paquete */
+#form-nuevo-paquete {
+  display: flex;
+  gap: 10px;
+  margin: 30px auto 24px auto;
+  max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
+}
+
+#form-nuevo-paquete input[type="text"],
+#form-nuevo-paquete input[type="number"],
+#form-nuevo-paquete input[type="url"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 180px;
+  transition: border 0.2s;
+}
+
+#form-nuevo-paquete input:focus {
+  border-color: #2d8cf0;
+  outline: none;
+}
+
+#form-nuevo-paquete button[type="submit"] {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#form-nuevo-paquete button[type="submit"]:hover {
+  background: #e55d4a;
+}
+
+#form-nuevo-paquete button[type="button"] {
+  background: #eee;
+  color: #333;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: background 0.2s;
+}
+
+#form-nuevo-paquete button[type="button"]:hover {
+  background: #ccc;
+}
+
+/* Centrar el slider y los paquetes */
+.slider-box {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.slider-container {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-x: auto;
+  padding-bottom: 24px;
+}
+
+.slide {
+  background: #f9f4e7;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
+  padding: 24px 24px 18px 24px;
+  min-width: 350px;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.slide img {
+  width: 90%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.slide .texto {
+  width: 100%;
+  text-align: left;
+}
+
+.slide h3 {
+  color: #2196f3;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.slide .price {
+  color: #e74c3c;
+  font-weight: bold;
+  margin: 10px 0 14px 0;
+}
+
+.slide .btn-paquete {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.slide .btn-paquete:hover {
+  background: #e55d4a;
+}
+
+.slide .btn-eliminar-paquete {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.slide .btn-eliminar-paquete:hover {
+  background: #c0392b;
+}
+
+
+#agregar-paquete,
+#agregar-hospedaje,
+#agregar-comida,
+#agregar-transporte {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.07);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+#agregar-paquete:hover,
+#agregar-hospedaje:hover,
+#agregar-comida:hover,
+#agregar-transporte:hover {
+  background: #e55d4a;
+  box-shadow: 0 4px 16px 0 rgba(255,111,97,0.15);
+}
+.agregar-paquete-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+/* Formulario centrado y bonito */
+#form-nuevo-paquete,
+#form-nuevo-hospedaje,
+#form-nueva-comida,
+#form-nuevo-transporte {
+  display: flex;
+  gap: 10px;
+  margin: 30px auto 24px auto;
+  max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.07);
+}
+
+#form-nuevo-paquete input,
+#form-nuevo-hospedaje input,
+#form-nueva-comida input,
+#form-nuevo-transporte input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 180px;
+  transition: border 0.2s;
+}
+
+#form-nuevo-paquete button[type="submit"],
+#form-nuevo-hospedaje button[type="submit"],
+#form-nueva-comida button[type="submit"],
+#form-nuevo-transporte button[type="submit"] {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#form-nuevo-paquete button[type="submit"]:hover,
+#form-nuevo-hospedaje button[type="submit"]:hover,
+#form-nueva-comida button[type="submit"]:hover,
+#form-nuevo-transporte button[type="submit"]:hover {
+  background: #e55d4a;
+}
+
+#form-nuevo-paquete button[type="button"],
+#form-nuevo-hospedaje button[type="button"],
+#form-nueva-comida button[type="button"],
+#form-nuevo-transporte button[type="button"] {
+  background: #eee;
+  color: #333;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: background 0.2s;
+}
+
+#form-nuevo-paquete button[type="button"]:hover,
+#form-nuevo-hospedaje button[type="button"]:hover,
+#form-nueva-comida button[type="button"]:hover,
+#form-nuevo-transporte button[type="button"]:hover {
+  background: #ccc;
+}

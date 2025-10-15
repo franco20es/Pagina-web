@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Descubre la rica cultura de Ica: Paracas, Nazca y la Fiesta de la Vendimia. Explora tradiciones, historia y patrimonio peruano.">
+  <title>Cultura de Ica - Turismo Aventura en Perú</title>
+
+  <link rel="stylesheet" href="../MIS_CSS/Playas.css">
+  <script src="../MIS_JS/comentarios.js" defer></script>
+  <script src="../MIS_JS/comida.js" defer></script>
+  <script src="../MIS_JS/hospedaje.js" defer></script>
+  <script src="../MIS_JS/transporte.js" defer></script>
+  <script src="../MIS_JS/hamburger.js" defer></script>
+  <script src="../MIS_JS/slider.js" defer></script>
+  <script src="../MIS_JS/laziimg.js" defer></script>
+  <script src="../MIS_JS/autor.js" defer></script>
+  <script src="../MIS_JS/carrito.js" defer></script>
+  <script src="../MIS_JS/Paquetes.js" defer></script>
+</head>
+
+<body>
+  <header class="header-cultura" role="banner">
+    <div class="menu">
+      <span class="logo">Turismo Ica</span>
+      <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false" aria-controls="navbar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <nav class="navbar" id="navbar" role="navigation">
+        <ul>
+          <li><a href="playas.html">Playas</a></li>
+          <li><a href="desierto.html">Montañas</a></li>
+          <li><a href="cultura.html" aria-current="page">Cultura</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="suscripcion.html" class="btn-suscribete">Registrate</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-content">
+      <h1>Descubre la Cultura de Ica</h1>
+      <p>Explora las tradiciones, historia y patrimonio que hacen única a esta región.</p>
+      <a href="#destinos" class="btn-explorar">Explorar Destinos</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="destinos" class="destinos-section" aria-labelledby="destinos-heading">
+      <h2 id="destinos-heading" class="visually-hidden">Destinos principales</h2>
+      <button id="agregar-paquete" type="button">Agregar
+        nuevo paquete</button>
+      <div class="slider-box">
+        <div class="slider-container">
+          <article class="slide" aria-labelledby="paracas-heading">
+            <img src="imagenes/cultura1.png" alt="Tejidos de la Cultura Paracas" loading="lazy">
+            <div class="texto">
+              <h3 id="paracas-heading">Cultura Paracas</h3>
+              <p>
+                Reconocida por sus impresionantes tejidos y prácticas funerarias, la Cultura Paracas dejó un legado
+                único en la península de Paracas, destacando por su arte textil y avances médicos.
+              </p>
+              <a href="semana_8/pago.html?destino=paracas" class="btn-paquete">Comprar Paquete</a>
+            </div>
+          </article>
+
+          <article class="slide" aria-labelledby="nazca-heading">
+            <img src="imagenes/cultura2.png" alt="Líneas de Nazca vistas desde el aire" loading="lazy">
+            <div class="texto">
+              <h3 id="nazca-heading">Cultura Nazca</h3>
+              <p>
+                Famosa por las enigmáticas Líneas de Nazca, esta cultura desarrolló avanzados sistemas de irrigación y
+                una cerámica colorida que aún sorprende a arqueólogos y visitantes.
+              </p>
+              <a href="semana_8/pago.html?destino=nazca" class="btn-paquete">Comprar Paquete</a>
+            </div>
+          </article>
+
+          <article class="slide" aria-labelledby="vendimia-heading">
+            <img src="imagenes/vendimia.png" alt="Celebración de la Fiesta de la Vendimia en Ica" loading="lazy">
+            <div class="texto">
+              <h3 id="vendimia-heading">Fiesta de la Vendimia</h3>
+              <p>
+                Una celebración anual que honra la cosecha de la uva con desfiles, pisado de uvas, música, bailes y
+                degustaciones de vinos y piscos, mostrando la riqueza cultural de Ica.
+              </p>
+              <a href="semana_8/pago.html?destino=vendimia" class="btn-paquete">Comprar Paquete</a>
+            </div>
+          </article>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-prev" aria-label="Anterior destino">❮</button>
+          <button class="slider-next" aria-label="Siguiente destino">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="hospedaje" class="hospedaje-section" aria-labelledby="hospedaje-heading">
+      <h2 id="hospedaje-heading">Hospedajes en Ica</h2>
+      <button id="agregar-hospedaje" type="button">Agregar nuevo
+        hospedaje</button>
+      <div class="hospedaje-grid">
+        <article class="hospedaje-card">
+          <img
+            src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdGVsfGVufDB8fDB8fHww"
+            alt="Habitación económica en hotel cerca de Ica ciudad" loading="lazy">
+          <div class="card-content">
+            <h3>Hotel Económico</h3>
+            <p>Ubicado en Ica ciudad, cerca de sitios culturales, ofrece cómodas habitaciones y servicios básicos.</p>
+            <p class="price">S/80</p>
+            <button class="btn-reservar" aria-label="Reservar en Hotel Económico">Reservar</button>
+          </div>
+        </article>
+
+        <article class="hospedaje-card">
+          <img
+            src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWx8ZW58MHx8MHx8fDA%3D"
+            alt="Habitación VIP con vista a viñedos" loading="lazy">
+          <div class="card-content">
+            <h3>Hotel VIP</h3>
+            <p>Ubicado cerca de bodegas en Ica, ofrece cómodas habitaciones y servicios de spa.</p>
+            <p class="price">S/150</p>
+            <button class="btn-reservar" aria-label="Reservar en Hotel VIP">Reservar</button>
+          </div>
+        </article>
+
+        <article class="hospedaje-card">
+          <img
+            src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Suite premium con terraza privada" loading="lazy">
+          <div class="card-content">
+            <h3>Hotel Premium</h3>
+            <p>Ubicado en Ica ciudad, ofrece habitaciones de lujo y servicios premium cerca de sitios culturales.</p>
+            <p class="price">S/220</p>
+            <button class="btn-reservar" aria-label="Reservar en Hotel Premium">Reservar</button>
+          </div>
+        </article>
+
+        <article class="hospedaje-card">
+          <img
+            src="https://images.unsplash.com/photo-1518733057094-95b53143d2a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdGVsfGVufDB8fDB8fHww"
+            alt="Resort turístico con piscina en Ica" loading="lazy">
+          <div class="card-content">
+            <h3>Hotel Turistas</h3>
+            <p>Ubicado cerca de Nazca, ofrece la mejor experiencia con servicios completos y acceso a sitios
+              arqueológicos.</p>
+            <p class="price">S/300</p>
+            <button class="btn-reservar" aria-label="Reservar en Hotel Turistas">Reservar</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="almuerzos" class="gastronomia-section" aria-labelledby="gastronomia-heading">
+      <h2 id="gastronomia-heading">Gastronomía típica de Ica</h2>
+      <button id="agregar-comida" type="button">Agregar nueva
+        comida</button>
+      <div class="comida-grid">
+        <article class="comida-card">
+          <img src="https://media.istockphoto.com/id/1217929421/es/foto/peruvian-food-or-arroz-con-mariscos.webp"
+            alt="Arroz con mariscos servido en plato tradicional" loading="lazy">
+          <div class="card-content">
+            <h3>Arroz con mariscos</h3>
+            <p>Un delicioso plato de arroz con una variedad de mariscos frescos, típico de la región costera.</p>
+            <p class="price">S/40</p>
+            <button class="btn-comprar" aria-label="Ordenar Arroz con mariscos">Comprar</button>
+          </div>
+        </article>
+        <div class="comida-grid">
+
+        </div>
+        <article class="comida-card">
+          <img src="https://media.istockphoto.com/id/1152713609/es/foto/la-comida-peruana.webp"
+            alt="Carapulcra con sopa seca servida en plato hondo" loading="lazy">
+          <div class="card-content">
+            <h3>Carapulcra con sopa seca</h3>
+            <p>Plato tradicional iqueño con papa seca y fideos, acompañado de carne.</p>
+            <p class="price">S/40</p>
+            <button class="btn-comprar" aria-label="Ordenar Carapulcra con sopa seca">Comprar</button>
+          </div>
+        </article>
+
+        <article class="comida-card">
+          <img
+            src="https://media.istockphoto.com/id/1147460940/es/foto/cutlets-en-una-placa-blanca-en-una-tabla-de-servir.webp"
+            alt="Pallares verdes con chicharrón crujiente" loading="lazy">
+          <div class="card-content">
+            <h3>Pallares con chicharrón</h3>
+            <p>Deliciosos pallares verdes acompañados de chicharrón de cerdo, especialidad de Ica.</p>
+            <p class="price">S/40</p>
+            <button class="btn-comprar" aria-label="Ordenar Pallares con chicharrón">Comprar</button>
+          </div>
+        </article>
+
+        <article class="comida-card">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1730240724921-8de763b6d0d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2V2aWNoZXxlbnwwfHwwfHx8MA%3D%3D"
+            alt="Ceviche iqueño con choclo y camote" loading="lazy">
+          <div class="card-content">
+            <h3>Ceviche iqueño</h3>
+            <p>Fresco ceviche preparado con pescado del día y el toque especial de la región.</p>
+            <p class="price">S/40</p>
+            <button class="btn-comprar" aria-label="Ordenar Ceviche iqueño">Comprar</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="transporte-section" aria-labelledby="transporte-heading">
+      <h2 id="transporte-heading">Transporte a Ica</h2>
+      <button id="agregar-transporte" type="button">Agregar nuevo transporte</button>
+      <div class="transporte-grid">
+        <article class="transporte-card">
+          <img src="imagenes/cultura5.png" alt="Autobús económico con asientos estándar" loading="lazy">
+          <div class="card-content">
+            <h3>Bus Económico</h3>
+            <p>Viaja cómodamente desde Lima a Ica en un bus económico con servicios básicos.</p>
+            <p class="price">S/30</p>
+            <button class="btn-comprar" aria-label="Comprar pasaje en Bus Económico">Comprar</button>
+          </div>
+        </article>
+
+        <article class="transporte-card">
+          <img src="imagenes/cultura4.png" alt="Autobús VIP con asientos reclinables" loading="lazy">
+          <div class="card-content">
+            <h3>Bus VIP</h3>
+            <p>Disfruta de un viaje de lujo con asientos reclinables y servicio a bordo.</p>
+            <p class="price">S/70</p>
+            <button class="btn-comprar" aria-label="Comprar pasaje en Bus VIP">Comprar</button>
+          </div>
+        </article>
+
+        <article class="transporte-card">
+          <img src="imagenes/cultura2.png" alt="Autobús premium con entretenimiento" loading="lazy">
+          <div class="card-content">
+            <h3>Bus Premium</h3>
+            <p>Viaja con estilo y comodidad en nuestro servicio premium con entretenimiento.</p>
+            <p class="price">S/100</p>
+            <button class="btn-comprar" aria-label="Comprar pasaje en Bus Premium">Comprar</button>
+          </div>
+        </article>
+
+        <article class="transporte-card">
+          <img src="imagenes/cultura4.png" alt="Autobús turístico de primera clase" loading="lazy">
+          <div class="card-content">
+            <h3>Bus Turista</h3>
+            <p>La experiencia más completa con asientos cama y servicios de primera clase.</p>
+            <p class="price">S/130</p>
+            <button class="btn-comprar" aria-label="Comprar pasaje en Bus Turista">Comprar</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="info-section" aria-labelledby="info-heading">
+      <h2 id="info-heading">¿Por qué explorar la cultura de Ica?</h2>
+      <div class="info-content">
+        <p>
+          La región de Ica es un tesoro de historia y tradiciones milenarias. Las culturas Paracas y Nazca dejaron un
+          legado imborrable con sus textiles, cerámicas y las enigmáticas Líneas de Nazca, visibles desde el aire.
+        </p>
+        <p>
+          Además, la Fiesta de la Vendimia celebra la rica tradición vitivinícola de Ica, con eventos llenos de música,
+          danza y degustaciones de vino y pisco. Visitar Ica es sumergirse en un pasado vibrante y una cultura viva que
+          sigue cautivando al mundo.
+        </p>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/517XyeY6FFI?si=HK7g-72m9uNRMajz"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonios-section" aria-labelledby="testimonios-heading">
+      <h2 id="testimonios-heading">Experiencias de nuestros visitantes</h2>
+      <div class="testimonios-grid">
+        <blockquote class="testimonio">
+          <img src="imagenes/cultura1.png" alt="Foto de Juan Pérez" loading="lazy">
+          <div class="testimonio-content">
+            <p>"Visitar los textiles Paracas fue como viajar en el tiempo, una experiencia única."</p>
+            <footer>- Juan Pérez</footer>
+          </div>
+        </blockquote>
+
+        <blockquote class="testimonio">
+          <img src="imagenes/cultura2.png" alt="Foto de María López" loading="lazy">
+          <div class="testimonio-content">
+            <p>"Las Líneas de Nazca desde el aire son impresionantes, un misterio fascinante."</p>
+            <footer>- María López</footer>
+          </div>
+        </blockquote>
+
+        <blockquote class="testimonio">
+          <img src="imagenes/vendimia.png" alt="Foto de Carlos García" loading="lazy">
+          <div class="testimonio-content">
+            <p>"La Fiesta de la Vendimia fue puro color y sabor, el pisco es increíble."</p>
+            <footer>- Carlos García</footer>
+          </div>
+        </blockquote>
+      </div>
+      <button id="abrir-modal-comentario" class="btn-toggle" aria-expanded="false" aria-controls="modal-comentario">
+        Agregar Comentario
+      </button>
+
+      <div id="modal-comentario" class="modal-comentario" style="display:none;">
+        <div class="modal-contenido">
+          <span class="cerrar-modal" id="cerrar-modal-comentario">&times;</span>
+          <h3>Comparte tu experiencia</h3>
+          <form id="comentario-form-modal">
+            <div class="form-group">
+              <label for="nombre-modal">Tu nombre:</label>
+              <input type="text" id="nombre-modal" name="nombre" required placeholder="Ej: Ana García">
+            </div>
+            <div class="form-group">
+              <label for="comentario-modal">Tu comentario:</label>
+              <textarea id="comentario-modal" name="comentario" required
+                placeholder="Cuéntanos sobre tu experiencia en las playas de Ica..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="imagen-modal">URL de tu foto (opcional):</label>
+              <input type="url" id="imagen-modal" name="imagen" placeholder="https://...">
+            </div>
+            <button type="submit" class="btn-agregar">Publicar Comentario</button>
+          </form>
+        </div>
+      </div>
+      <div id="nuevos-comentarios" class="nuevos-comentarios"></div>
+    </section>
+
+    <section class="datos-section" aria-labelledby="datos-heading">
+      <h2 id="datos-heading">Información útil para tu aventura cultural</h2>
+      <div class="datos-content">
+        <div class="lugares-lista">
+          <h3>Lugares para explorar</h3>
+          <ul>
+            <li>Cultura Paracas</li>
+            <li>Líneas de Nazca</li>
+            <li>Fiesta de la Vendimia</li>
+            <li>Museo Regional de Ica</li>
+            <li>Bodegas de Subtanjalla</li>
+          </ul>
+        </div>
+
+        <div class="tabla-datos">
+          <h3>Datos de aventura</h3>
+          <div class="table-responsive">
+            <table>
+              <caption>Información sobre los principales destinos culturales</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Lugar</th>
+                  <th scope="col">Tipo de experiencia</th>
+                  <th scope="col">Actividades</th>
+                  <th scope="col">Dificultad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Cultura Paracas</th>
+                  <td>Arqueológica</td>
+                  <td>Visitas a museos, exploración de sitios</td>
+                  <td>Baja</td>
+                </tr>
+                <tr>
+                  <th scope="row">Líneas de Nazca</th>
+                  <td>Arqueológica</td>
+                  <td>Vuelos panorámicos, tours guiados</td>
+                  <td>Baja-Moderada</td>
+                </tr>
+                <tr>
+                  <th scope="row">Fiesta de la Vendimia</th>
+                  <td>Festividad</td>
+                  <td>Degustaciones, desfiles, pisado de uvas</td>
+                  <td>Baja</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mapa-section" aria-labelledby="mapa-heading">
+      <h2 id="mapa-heading">Ubicación de los principales atractivos culturales</h2>
+      <div class="mapa-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4787.996298231131!2d-75.13257992397145!3d-14.739021797856914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91141e46ccb532ad%3A0x1802d2b96697b591!2sL%C3%ADneas%20de%20Nazca!5e1!3m2!1ses-419!2spe!4v1751056175787!5m2!1ses-419!2spe"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-contacto">
+        <h2>Contáctanos</h2>
+        <address>
+          <p><i class="fas fa-envelope"></i> <strong>Correo:</strong> <a
+              href="mailto:turismoica@gmail.com">turismoica@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> <a href="tel:+51987654321">+51 987 654 321</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Av. San Martín 123, Ica, Perú</p>
+        </address>
+      </div>
+
+      <div class="footer-redes">
+        <h2>Síguenos</h2>
+        <ul class="redes-list">
+          <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+                class="fab fa-facebook"></i></a></li>
+          <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a></li>
+          <li><a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i
+                class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i
+                class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h2>Suscríbete a nuestro boletín</h2>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <p>© 2025 Turismo Local en Ica, Perú. Todos los derechos reservados.</p>
+      <ul class="legal-links">
+        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+        <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+        <li><a href="mapa-sitio.html">Mapa del Sitio</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
+</script>
+</body>
+
+</html>
